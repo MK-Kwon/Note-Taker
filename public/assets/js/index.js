@@ -129,8 +129,12 @@ const renderNoteList = function(notes) {
 
 // Function to get notes from the db and render them in note-textarea(when initialise the application)
 const getAndRenderNotes = function() {
-
+    return getNotes().then(function(data){
+        renderNoteList(data);
+    });
 };
+
+
 
 // Gets and renders the list of saved notes when initialised
 getAndRenderNotes();
