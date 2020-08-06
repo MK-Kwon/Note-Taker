@@ -135,6 +135,12 @@ const getAndRenderNotes = function() {
 };
 
 
+$saveNoteBtn.on("click", handleNoteSave);
+$noteList.on("click", ".list-group-item", handleNoteSave);
+$newNoteBtn.on("click", handleNewNoteView);
+$noteList.on("click", ".delete-note", handleNoteDelete);
+$noteTitle.on("keyup", handleRenderSaveBtn);
+$noteText.on("keyup", handleRenderSaveBtn);
 
 // Gets and renders the list of saved notes when initialised
-getAndRenderNotes();
+getAndRenderNotes
