@@ -106,7 +106,24 @@ const handleRenderSaveBtn = function() {
 };
 
 // Function to render the list of note titles in note-textarea
-const renderNoteList = function() {
+const renderNoteList = function(notes) {
+    // Remove previously saved notes from note-textarea to prevent duplication
+    $noteList.empty();
+
+    const noteListItems = [];
+
+    for (let i = 0; i < notes.length; i++){
+        console.log(notes[i]);
+        const note = notes[i];
+
+        const $li = $("<li class='list-group-item'>").data(note);
+        const $span = $("<span>").text(note.title)
+        const $delBtn = $( "<i class='fas fa-trash-alt float-right text-danger delete-note'>");
+        
+        $li.append($span, $delBtn);
+        noteListItems.push($li);
+    }
+    $noteList.append(noteListItems);
 
 };
 
