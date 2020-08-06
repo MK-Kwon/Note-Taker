@@ -4,7 +4,7 @@ const $saveNoteBtn =$(".save-note");
 const $newNoteBtn =$(".new-note");
 const $noteList =$(".list-container .list-group");
 
-// activeNote is used to keep track of the note in the testarea
+// activeNote is used to keep track of the note in the textarea
 const activeNote = {};
 
 // Function for getting all notes from the db
@@ -33,8 +33,23 @@ const deleteNote = function(id) {
 };
 
 
-// If there's an activeNote, display it. Otherwise render empty inputs
+// Function to display activeNote and if there's no activeNote, render empty inputs. Also 'save button' should be hidden to prevent duplication in saving same notes.
 const renderActiveNotes = function() {
+    $saveNoteBtn.hide();
+
+    if(activeNote.id) {
+        // jQuery 1.9+ (https://stackoverflow.com/questions/1306708/how-to-add-a-readonly-attribute-to-an-input)
+        $noteTitle.prop("readonly", true);
+        $noteText.prop("readonly", true);
+        // .val() is used to get/replace input elements values in jQuery,
+        $noteTitle.val(activeNote.title);
+        $noteText.val(activeNote.text);
+    }else {
+        $noteTitle.prop("readonly", false);
+        $noteText.prop("readonly", false);
+        $noteTitle.val("");
+        $noteText.val("");
+    }
 
 };
 
