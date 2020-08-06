@@ -98,7 +98,11 @@ const handleNewNoteView = function() {
 
 // Function to hide the save button if a note's title or text are empty. Or else show the button
 const handleRenderSaveBtn = function() {
-    
+    if(!$noteTitle.val().trim() || !$noteText.val().trim()) {
+        $saveNoteBtn.hide();
+    }else {
+        $saveNoteBtn.show();
+    }
 };
 
 // Function to render the list of note titles in note-textarea
