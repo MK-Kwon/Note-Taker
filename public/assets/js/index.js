@@ -50,13 +50,19 @@ const renderActiveNotes = function() {
         $noteTitle.val("");
         $noteText.val("");
     }
-
 };
 
 
 // Function to get the note data from the inputs, save it to the db and update the view
 const handleNoteSave = function() {
-
+    const newNotes = {
+        title: $noteTitle.val(),
+        text: $noteText.val()
+    };
+    saveNote(newNotes).then(function(){
+        getAndRenderNotes();
+        renderActiveNotes();
+    });
 };
 
 // Function to delete the saved notes when clicked
