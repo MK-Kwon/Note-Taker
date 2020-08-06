@@ -66,7 +66,19 @@ const handleNoteSave = function() {
 };
 
 // Function to delete the saved notes when clicked
-const handleNoteDelete = function() {
+const handleNoteDelete = function(event) {
+    // This will stop the other button function('handleNoteView') to be called
+    event.stopPropagation();
+    // Getting the data from the delete button's parent element
+    const note = $(this).parent(".list-group-item").data();
+    // If the id of the saved note and the id of active note are equal, remove the active note from textarea
+    if(activeNote.id === note.id) {
+        activeNote = {};
+    }
+    deleteNote(note.id).then(function() {
+        getAndRenderNotes();
+        renderActiveNotes();
+    })
 
 };
 
