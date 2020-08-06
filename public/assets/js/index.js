@@ -9,17 +9,27 @@ const activeNote = {};
 
 // Function for getting all notes from the db
 const getNotes = function() {
-
+    return $.ajax({
+        url: "/api/notes",
+        method: "GET"
+    });
 };
 
 // Function for saving a note to the db
-const saveNote = function() {
-
+const saveNote = function(data) {
+    return $.ajax({
+        url: "/api/notes",
+        data: note,
+        method: "POST"
+    });
 };
 
 // Function for deleting a note from the db
-const deleteNote = function() {
-
+const deleteNote = function(id) {
+    return $.ajax({
+        url: "/api/notes/" + id,
+        method: "DELETE"
+    })
 };
 
 
