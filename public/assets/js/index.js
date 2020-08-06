@@ -84,19 +84,21 @@ const handleNoteDelete = function(event) {
 
 // Function to display saved notes on to the testarea when clicked
 const handleNoteView = function() {
-
-};
+    activeNote = $(this).data();
+    renderActiveNotes();
+};  
 
 
 // Function to remove unsaved new notes from textarea so that the user can write a new one
 const handleNewNoteView = function() {
-
+    activeNote = {};
+    renderActiveNotes();
 };
 
 
 // Function to hide the save button if a note's title or text are empty. Or else show the button
 const handleRenderSaveBtn = function() {
-
+    
 };
 
 // Function to render the list of note titles in note-textarea
