@@ -143,4 +143,5 @@ $noteTitle.on("keyup", handleRenderSaveBtn);
 $noteText.on("keyup", handleRenderSaveBtn);
 
 // Gets and renders the list of saved notes when initialised
-getAndRenderNotes
+getAndRenderNotes();
+
