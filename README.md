@@ -33,12 +33,12 @@ Node js & Express js,
 ```
 ## Screen Shots
 
-<img src="http://drive.google.com/uc?id=1PnNTyLZZmoPKqBcfouP86TiA0ce6ozfC">
+<img src="http://drive.google.com/uc?id=1PnNTyLZZmoPKqBcfouP86TiA0ce6ozfC" width ="800">
 
 
 ## Live Demo
 
-<img src="https://media.giphy.com/media/WSxNK5Zg7OKCLdlVn8/giphy.gif" width ="800">
+<img src="https://thumbs.gfycat.com/SomberSillyKudu-size_restricted.gif" width ="800">
 
 ## Author
 
