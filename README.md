@@ -40,7 +40,7 @@ Node js & Express js,
 
 ## Live Demo
 
-<img src="https://thumbs.gfycat.com/NegativeHeartfeltArkshell-size_restricted.gif" width ="800">
+<img src="https://thumbs.gfycat.com/NegativeHeartfeltArkshell-size_restricted.gif" width ="100%" height="auto">
 
 ## Author
 
