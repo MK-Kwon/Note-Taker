@@ -33,8 +33,8 @@ Node js & Express js,
 ```
 ## Screen Shots
 
-<img src="http://drive.google.com/uc?id=1UlVOjnRQE614ExLJm7WVKo3oFZX-NTii" width ="800">
-<img src="http://drive.google.com/uc?id=1zzGbVx7Os3xsgGKbqNPcsSR15KXRfmtk" width ="800">
+<img src="http://drive.google.com/uc?id=1UlVOjnRQE614ExLJm7WVKo3oFZX-NTii" width ="100%" height="auto">
+<img src="http://drive.google.com/uc?id=1zzGbVx7Os3xsgGKbqNPcsSR15KXRfmtk" width ="100%" height="auto">
 
 
 
